@@ -1,0 +1,361 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Hong Wang}
+\newcommand{\CVTitle}{Hong Wang's CV}
+\newcommand{\CVNote}{Last updated on {\today}}
+\newcommand{\CVWebpage}{http://hongwang600.github.io}
+
+\usepackage{enumitem}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/Phelps+Hall/@34.4161308,-119.8468366,17z/data=!3m1!4b1!4m5!3m4!1s0x80e93f7042b51aa9:0xc80cbd08cacd9e49!8m2!3d34.4161308!4d-119.8446426}
+{3530 Phelps Hall, UC Santa Barbara, California, 93106}
+\par
+\href{mailto:hongwang600@ucsb.edu}
+{hongwang600@ucsb.edu}
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{University of California, Santa Barbara},
+Santa Barbara, California, USA
+
+\Gap
+\BulletItem
+Ph.D. in Computer Science
+\hfill
+\DatestampYMD{2018}{09}{01} -- present
+\begin{Detail}
+\SubBulletItem
+Adviser:
+Prof.~William~Wang
+\SubBulletItem
+Focus:
+Natural Language Processing, Deep Learning.
+\end{Detail}
+
+\BigGap
+\Entry
+\textbf{Nanjing University},
+Nanjing, Jiangsu, China
+
+\Gap
+\BulletItem
+B.S. in Computer Science
+\hfill
+\DatestampYMD{2014}{09}{01} --
+\DatestampYMD{2018}{06}{30}
+\begin{Detail}
+\SubBulletItem
+Thesis Advisor: Prof.~Yang~Yu
+\SubBulletItem
+Focus: Derivative-free Optimization.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+\Entry
+\textbf{Machine Learning Group},
+Microsoft Research Asia
+
+\Gap
+\BulletItem
+Software Engineer Intern
+\hfill
+\DatestampYMD{2017}{10}{15} --
+\DatestampYMD{2018}{01}{15}
+\begin{Detail}
+\SubBulletItem
+Supervisors:
+Dr.~Tao~Qin
+\SubBulletItem
+Project:
+Classification systems and models for ads relevance and click prediction.
+\end{Detail}
+
+\BigGap
+\Entry
+\textbf{Learning And Mining from DatA (LAMDA) Group},
+Nanjing University
+
+\Gap
+\BulletItem
+Research Assistant
+\hfill
+\DatestampYMD{2016}{09}{15} --
+\DatestampYMD{2018}{06}{15}
+\begin{Detail}
+\SubBulletItem
+Supervisors:
+Prof.~Yang~Yu
+\SubBulletItem
+Project:
+A novel approach to improve derivative-free algorithms in noisy environment.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+% \SubSection
+% {Journals}
+% {Journals}
+% {PDF:Journals}
+
+% % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+% \begingroup
+% \renewcommand{\MaxNumberedItem}{[88]}
+
+% \Gap
+% \NumberedItem{[10]}
+% \href{http://www.example.com/my-paper-doi-5}
+% {\underline{J.~Doe}, J.~Citizen, and A.~Yone,
+% ``On lasers and climate change,''
+% \textit{Journal of Science},
+% vol.~89,
+% no.~2,
+% pp.~4123--4133,
+% \DatestampYM{2008}{02}.}
+
+% \Gap
+% \NumberedItem{[1]}
+% \href{http://www.example.com/my-paper-doi-4}
+% {\underline{J.~Doe} and J.~Citizen,
+% ``Measuring the extent of climate change,''
+% \textit{Global Scientific Journal},
+% vol.~12,
+% no.~4,
+% pp.~330--352,
+% \DatestampYM{2006}{12}.}
+
+% \endgroup
+
+\BigGap
+\SubSection
+{Conferences}
+{Conferences}
+{PDF:Conferences}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+%\begingroup{}
+%\renewcommand{\MaxNumberedItem}{[8]}
+\begin{enumerate}[label={[\arabic*]~~}]
+\item
+\underline{Hong~Wang}, Xin~Wang, Wenhan~Xiong, Mo~Yu, Xiaoxiao~Guo, Shiyu~Chang and William~Wang,
+``Self-Supervised Learning for Contextualized Extractive Summarization'',
+in \textit{Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL'19)},
+Florence, Italy,
+\DatestampYM{2019}{07}.
+
+\item
+Wenhan~Xiong, Jiawei~Wu, \underline{Hong~Wang}, Vivek~Kulkarni, Mo~Yu, Xiaoxiao~Guo, Shiyu~Chang and William~Wang,
+``TweetQA: A Social Media Focused Question Answering Dataset'',
+in \textit{Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL'19)},
+Florence, Italy,
+\DatestampYM{2019}{07}.
+
+\item
+\underline{Hong~Wang}, Wenhan~Xiong, Mo~Yu, Xiaoxiao~Guo, Shiyu~Chang and William~Wang,
+``Sentence Embedding Alignment for Lifelong Relation Extraction'',
+in \textit{Proceedings of the 57th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT'19)},
+Minneapolis, MN, USA,
+\DatestampYM{2019}{06}.
+
+\item
+\underline{Hong~Wang}, Hong~Qian and Yang~Yu,
+``Noisy derivative-free optimization with value suppression'',
+in \textit{Proceedings of the 32nd AAAI Conference on Artificial Intelligence (AAAI’18)},
+New Orleans, LA, USA,
+\DatestampYM{2018}{02}.
+
+\end{enumerate}
+
+\BigGap
+\SubSection
+{Preprints}
+{Preprints}
+{PDF:Preprints}
+\begin{enumerate}[label={[\arabic*]~~}]
+\item
+\underline{Hong~Wang}, Wenhan~Xiong, Mo~Yu, Xiaoxiao~Guo, Shiyu~Chang and William~Wang,
+``Meta Reasoning over Knowledge Graphs'',
+technical report,
+\DatestampYM{2019}{06}.
+
+\item
+Wenhan~Xiong, Mo~Yu, Xiaoxiao~Guo, \underline{Hong~Wang}, Shiyu~Chang, Murray~Campbell and William~Wang,
+``Simple yet Effective Bridge Reasoning for Open-Domain Multi-Hop Question Answering'',
+MRQA: Machine Reading for Question Answering workshop at EMNLP-IJCNLP 2019,
+\DatestampYM{2019}{11}.
+
+\item
+Wenhu Chen, Hongmin Wang, Jianshu Chen, Yunkai Zhang, \underline{Hong Wang}, Shiyang Li, Xiyou Zhou and William Yang Wang,
+``TabFact: A Large-scale Dataset for Table-based Fact Verification'',
+technical report,
+\DatestampYM{2019}{09}.
+
+\item
+\underline{Hong Wang}, Christfried Focke, Rob Sylvester, Nilesh Mishra and William Wang,
+``Fine-tune Bert for DocRED with Two-step Process'',
+technical report,
+\DatestampYM{2019}{09}.
+
+\end{enumerate}
+
+%\endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Honors}
+{Awards \& Honors}
+{PDF:AwardsAndHonors}
+
+\Entry
+\textbf{Chancellor's Fellowship}, University of California, Santa Barbara
+\hfill
+\DatestampYM{2018}{09}
+
+\Gap
+\Entry
+\textbf{Outstanding Undergraduate Award}, Nanjing University
+\hfill
+\DatestampYM{2018}{06}
+
+\Gap
+\Entry
+\textbf{Excellent Bachelor Thesis Award}, Nanjing University
+\hfill
+\DatestampYM{2018}{06}
+
+\Gap
+\Entry
+\textbf{National Scholarship}, Ministry of Education, China
+\hfill
+\DatestampY{2016} -- \DatestampY{2017}
+
+\Gap
+\Entry
+\textbf{National Endeavor Scholarship}, Ministry of Education, China
+\hfill
+\DatestampY{2014} -- \DatestampY{2016}
+
+\Section
+{Service}
+{Service}
+{PDF:Service}
+
+\SubSection
+{Committee Member \& Reviewer}
+{Committee Member \& Reviewer}
+{PDF:Committee-Member/Reviewer}
+
+    \BulletItem Conference on Empirical Methods in Natural Language Processing (EMNLP) and 9th International Joint Conference on Natural Language Processing (IJCNLP), 2019
+    \BulletItem The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20), 2020
+
+\Section
+{Talks \& \newline Presentations}
+{Talks \& presentations}
+{PDF:Invited-talks}
+
+\Entry \textbf{Sentence Embedding Alignment for Lifelong Relation Extraction.} \hfill \DatestampYMD{2019}{05}{28}
+\begin{Detail}
+\BulletItem
+IBM invited online talk.
+\end{Detail}
+
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}
