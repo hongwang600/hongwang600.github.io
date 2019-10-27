@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.1.30)  16 OCT 2019 15:26
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.1.30)  26 OCT 2019 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -847,17 +847,17 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.3> not available
 (Font)              size <5> substituted on input line 73.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 224.
+(Font)              <7> on input line 236.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 224.
+(Font)              <5> on input line 236.
 
-Underfull \hbox (badness 1590) in paragraph at lines 238--243
+Underfull \hbox (badness 1590) in paragraph at lines 250--255
 \TU/Tinos-Regular.ttf(0)/m/n/10 Embedding Alignment for Lifelong Relation Extra
 ction”, in \TU/Tinos-Regular.ttf(0)/m/it/10 Proceedings of the 57th Annual
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 266--270
+Underfull \hbox (badness 2970) in paragraph at lines 278--282
 []\TU/Tinos-Regular.ttf(0)/m/n/10 Wenhan Xiong, Mo Yu, Xiaoxiao Guo, $[]$, Shiy
 u Chang, Murray Campbell and
  []
@@ -865,26 +865,26 @@ u Chang, Murray Campbell and
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
  (./CV.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 361.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 361.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 373.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 373.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.7pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
  ) 
 Here is how much of TeX's memory you used:
  23677 strings out of 493005
  444938 string characters out of 6134596
- 510593 words of memory out of 5000000
+ 511593 words of memory out of 5000000
  27508 multiletter control sequences out of 15000+600000
  6039 words of font info for 48 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 42i,5n,68p,10378b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,5n,68p,10378b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CV.xdv (2 pages, 43568 bytes).
+Output written on CV.xdv (2 pages, 47956 bytes).
