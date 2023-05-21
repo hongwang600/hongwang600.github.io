@@ -71,6 +71,9 @@ breaklinks}
 \,\SubBulletSymbol\,
 \href{\CVWebpage}
 {\url{\CVWebpage}}
+\,\SubBulletSymbol\,
+\href{https://scholar.google.com/citations?user=M9uQHIUAAAAJ&hl=en&authuser=1#}
+{Google Scholar}
 \end{SubTitle}
 
 \begin{Body}
@@ -79,13 +82,26 @@ breaklinks}
 %% RESEARCH INTEREST %%
 %%%%%%%%%%%%%%%
 
+% \Section
+% {Research \newline Interests}
+% {Research Interests}
+% {PDF:ResearchInterst}
+
+% \Entry
+% I am a fifth year CS Ph.D. candidate at UC Santa Barbara, advised by Prof. Xifeng Yan. My current research focuses on building task-oriented dialogue system under low-resource scenarios. I am also interested in open-domain question answering, pre-training methods with self-supervised learning, information extraction and reasoning over knowledge graphs, especially for lifelong learning and few-shot learning settings, and low resource Natural Language Processing such as transferring knowledge from rich resource languages to other low resource languages.
+
+%%%%%%%%%%%%%%%
+%% SELF INTRODUCTION%%
+%%%%%%%%%%%%%%%
+
 \Section
-{Research \newline Interests}
-{Research Interests}
-{PDF:ResearchInterst}
+{About me}
+{About-me}
+{PDF:AboutMe}
 
 \Entry
-I am currently working on open-domain question answering and pre-training methods with self-supervised learning. I am also interested in information extraction and reasoning over knowledge graphs, especially for lifelong learning and few-shot learning settings, and low resource Natural Language Processing such as transferring knowledge from rich resource languages to other low resource languages.
+I am a fifth-year CS Ph.D. candidate at UC Santa Barbara. My research mainly focuses on Machine Learning and NLP, especially on the dialogue system, question answering and information retrieval. As for industrial experience, I have interned as Applied Scientist and Research Scientist at Amazon Alexa, Meta AI and Microsoft Research, where I accumulated much hands-on experience for large-scale data preparation, model design, training, evaluation and deployment. In addition, I have led a team of 5 PhD talents to participate the fierce Amazon Taskbot Challenge , competing with 10 university teams from 3 continents and successfully getting into the final round. Personally, I am always curious and passionate about applying ML to solve complex problems in an applied environment! 
+
 
 %%%%%%%%%%%%%%%
 %% EDUCATION %%
@@ -104,14 +120,16 @@ Santa Barbara, California, USA
 \BulletItem
 Ph.D. in Computer Science
 \hfill
-\DatestampYMD{2018}{09}{01} -- Present
+\DatestampYMD{2018}{09}{01} -- \DatestampY{2023} Expected
 \begin{Detail}
 \SubBulletItem
-Adviser:
+Advisor:
 Prof.~Xifeng~Yan
 \SubBulletItem
 Focus:
 Natural Language Processing, Deep Learning
+\SubBulletItem
+Chancellor's Fellowship for three years
 \end{Detail}
 
 \BigGap
@@ -126,10 +144,17 @@ B.S. in Computer Science
 \DatestampYMD{2014}{09}{01} --
 \DatestampYMD{2018}{06}{30}
 \begin{Detail}
+% \SubBulletItem
+% Thesis Advisor: Prof.~Yang~Yu
+% \SubBulletItem
+% Focus: Derivative-free Optimization
 \SubBulletItem
-Thesis Advisor: Prof.~Yang~Yu
+Research assistant in Learning And Mining from DatA (LAMDA) Group
 \SubBulletItem
-Focus: Derivative-free Optimization
+Excellent Bachelor Thesis Award
+\SubBulletItem
+GPA Ranking 4/150
+
 \end{Detail}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,14 +162,40 @@ Focus: Derivative-free Optimization
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \Section
-{Experience}
+{Working Experience}
 {Experience}
 {PDF:Experience}
 
 \BigGap
 \Entry
-\textbf{Wakeword Group},
-Amazon Alexa
+\textbf{Amazon Alexa},
+Wakeword Group, Cambridge, MA
+\BulletItem
+Applied Scientist Intern
+\hfill
+\DatestampYMD{2022}{06}{13} --
+\DatestampYMD{2022}{09}{16}
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+Dr.~Gengshen~Fu, Rajath Kumar
+\SubBulletItem
+Project: Unified Wakeword and compact spoken language understanding under low-resource scenarios
+\SubBulletItem
+Applied data synthesis approach to generate audio data for low-resource intents.
+\SubBulletItem
+Explored data augmentation techniques to improve generation from low-resource to rich-resource intents.
+\SubBulletItem
+Proposed techniques to further improve generalization such as using separate classification layers and conducting alignment between synthetic and real data.
+\SubBulletItem
+Submitted a paper and delivered a demo for unified wakeword and intent detection on device.
+
+\end{Detail}
+
+\BigGap
+\Entry
+\textbf{Amazon Alexa},
+Wakeword Group, Cambridge, MA
 \BulletItem
 Applied Scientist Intern
 \hfill
@@ -154,14 +205,28 @@ Applied Scientist Intern
 \SubBulletItem
 Supervisor:
 Dr.~Gengshen~Fu, Dr.~Bo~Xiao
+\SubBulletItem
+Project:
+Unified Wakeword and intent detection on device
+\SubBulletItem
+Designed model architecture for unified Wakeword and intent detection.
+\SubBulletItem
+Proposed new loss function to reduce false accepts for the streaming model.
+\SubBulletItem
+Supported entity recognition for a finite set, which largely increases the coverage of NLU on device.
+\SubBulletItem
+Achieved a promising coverage for intent and entity recognition when matching the precision as cloud model.
+\SubBulletItem
+Submitted a patent and a paper.
 % \SubBulletItem
-% Project:
+% Description:
+% Existing workflow typically detect wakeword on device and then send audio for further processing on cloud. In this project, we explored the possibility of detecting some common intents together with the wakeword using a unified model on device. 
 \end{Detail}
 
 \BigGap
 \Entry
-\textbf{Language and Translation Technologies (LATTE) Group},
-Facebook AI
+\textbf{Meta AI},
+Language and Translation Technologies (LATTE) Group, Menlo Park, CA
 \BulletItem
 Research Intern
 \hfill
@@ -174,12 +239,17 @@ Dr.~Ves~Stoyanov
 \SubBulletItem
 Project:
 Memory augmented pretrained language model
+\SubBulletItem
+Implemented product key memory (PKM) in Fairseq framework for language modeling, achieving better perplexity during pre-training while using similar computation cost.
+% \SubBulletItem
+% Description:
+% Language models can achieve better performance when increasing the model size. However, the memory requirement and computational cost would also increase as the model size. In this project, I explored product key memory (PKM) for pretrained model on language modeling task. It shows that language models can achieve lower perplexity when augmented with PKM using similar computational cost.
 \end{Detail}
 
 \BigGap
 \Entry
-\textbf{Machine Learning Group},
-Microsoft Research Asia
+\textbf{Microsoft Research Asia},
+Machine Learning Group, Beijing, China
 \BulletItem
 Software Engineer Intern
 \hfill
@@ -189,32 +259,58 @@ Software Engineer Intern
 \SubBulletItem
 Supervisor:
 Dr.~Tao~Qin
+% \SubBulletItem
+% Project:
+% Classification systems and models for ads relevance and click prediction
 \SubBulletItem
-Project:
-Classification systems and models for ads relevance and click prediction
+Built classification models for ads relevance and click prediction.
+\SubBulletItem
+Investigated the rationality of data, extracted new features and designed new models.
+\SubBulletItem
+Explored how to alleviate position bias problem in advertisement.
+% Description:
+% My task is to build classification systems and models for ads relevance and click prediction. I investigated the rationality of data, extract new features, design new models and try to tackle the position bias Problem in advertisement.
 \end{Detail}
 
-\BigGap
-\Entry
-\textbf{Learning And Mining from DatA (LAMDA) Group},
-Nanjing University
-\BulletItem
-Research Assistant
-\hfill
-\DatestampYMD{2016}{09}{15} --
-\DatestampYMD{2018}{06}{15}
-\begin{Detail}
-\SubBulletItem
-Supervisor:
-Prof.~Yang~Yu
-\SubBulletItem
-Project:
-A novel approach to improve derivative-free algorithms in noisy environments
-\end{Detail}
+% \BigGap
+% \Entry
+% \textbf{Learning And Mining from DatA (LAMDA) Group},
+% Nanjing University
+% \BulletItem
+% Research Assistant
+% \hfill
+% \DatestampYMD{2016}{09}{15} --
+% \DatestampYMD{2018}{06}{15}
+% \begin{Detail}
+% \SubBulletItem
+% Supervisor:
+% Prof.~Yang~Yu
+% \SubBulletItem
+% Project:
+% A novel approach to improve derivative-free algorithms in noisy environments
+% \end{Detail}
 
 %%%%%%%%%%%%%%%%%%
 %% PUBLICATIONS %%
 %%%%%%%%%%%%%%%%%%
+\newpage
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+\BulletItem
+\textbf{Programming Language}: Python, C, C++
+
+\BulletItem
+\textbf{Machine Learning}: Tensorflow, Pytorch, Spark, Transformers, Fairseq, 
+Dialogue System, Question Answering, Information Retrieval, Language Model Pretraining
+
+\BulletItem
+\textbf{Computer Science}: SQL, Compiler, Operating System, Distributed System,
+Networking, Edge Computing, Database, Data Structure, Algorithms
+
+% \BulletItem
+% \textbf{Writing}: LaTex
 
 \Section
 {Publications}
@@ -265,12 +361,30 @@ A novel approach to improve derivative-free algorithms in noisy environments
 %\renewcommand{\MaxNumberedItem}{[8]}
 \begin{enumerate}[label={[\arabic*]~~}]
 \item
+Jing Qian$^*$, \underline{Hong Wang}$^*$, Zekun Li, Shiyang Li, Xifeng Yan,
+``Limitations of Language Models in Arithmetic and Symbolic Induction'',
+in \textit{Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023)}, Toronto, Canada, 
+\DatestampYM{2023}{07}.
+
+\item 
+Zekun Li, Wenhu Chen, Shiyang Li, \underline{Hong Wang}, Jing Qian, Xifeng Yan,
+``Dialogic: Controllable Dialogue Simulation with In-Context Learning'',
+in \textit{Findings of the Conference on Empirical Methods in Natural Language Processing (Findings of EMNLP 2022)}, Abu Dhabi,
+\DatestampYM{2022}{12}
+
+\item
+Zekun Li$^*$, \underline{Hong Wang}$^*$, Alon Albalak, Yingrui Yang, Jing Qian, Shiyang Li, Xifeng Yan,
+``Making Something out of Nothing: Building Robust Task-oriented Dialogue Systems from Scratch'',
+in \textit{Proceedings of Alexa Prize TaskBot},
+\DatestampYM{2022}{06}.
+
+\item
 Jing Qian, \underline{Hong Wang}, Mai ElSherief, Xifeng Yan, 
 ``Lifelong Learning of Hate Speech Classification on Social Media'',
 in \textit{Proceedings of 2021 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT 2021)}, online, \DatestampYM{2021}{06}.
 
 \item
-Wenhan Xiong$^*$, \underline{Hong Wang}$^*$, William Yang Wang,
+\underline{Hong Wang}$^*$, Wenhan Xiong$^*$, William Yang Wang,
 ``Progressively Pretrained Dense Corpus Index for Open-Domain Question Answering'',
 in \textit{Proceedings of the 16th conference of the European Chapter of the Association for Computational Linguistics (EACL 2021)}, online, 
 \DatestampYM{2021}{04}.
@@ -323,6 +437,12 @@ New Orleans, LA, USA,
 {PDF:Preprints}
 \begin{enumerate}[label={[\arabic*]~~}]
 \item
+Shiyang Li, Jianshu Chen, Yelong Shen, Zhiyu Chen, Xinlu Zhang, Zekun Li, \underline{Hong Wang}, Jing Qian, Baolin Peng, Yi Mao, Wenhu Chen, Xifeng Yan,
+``Explanations from Large Language Models Make Small Reasoners Better'',
+technical report,
+\DatestampYM{2022}{10}
+
+\item
 Wenhan~Xiong, Mo~Yu, Xiaoxiao~Guo, \underline{Hong~Wang}, Shiyu~Chang, Murray~Campbell and William~Wang,
 ``Simple yet Effective Bridge Reasoning for Open-Domain Multi-Hop Question Answering'',
 MRQA: Machine Reading for Question Answering workshop at EMNLP-IJCNLP 2019, Hong Kong, China,
@@ -343,6 +463,19 @@ technical report,
 
 %\endgroup
 
+\Section
+{Patents}
+{Patens}
+{PDF:Patens}
+
+\begin{enumerate}[label={[\arabic*]~~}]
+\item
+\underline{Hong~Wang}, Gengshen~Fu, Bo~Xiao and Tao~Zhang,
+``Unified wakeword and language understanding processing'', patent submitted,
+\DatestampYM{2021}{09}.
+\end{enumerate}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% AWARDS & SCHOLARSHIPS %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -352,6 +485,11 @@ technical report,
 Honors}
 {Awards \& Honors}
 {PDF:AwardsAndHonors}
+
+\Entry
+\textbf{Chancellor's Fellowship}, University of California, Santa Barbara
+\hfill
+\DatestampYM{2022}{09}
 
 \Entry
 \textbf{Chancellor's Fellowship}, University of California, Santa Barbara
@@ -409,9 +547,25 @@ Honors}
     \BulletItem The Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP 21), 2021
     \BulletItem The 10th CCF International Conference on Natural Language Processing and Chinese Computing (NLPCC2021), 2021
     \BulletItem The thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021), 2021
+    \BulletItem ACL Rolling Review November, 2021
+    \BulletItem ACL Rolling Review December, 2021
     \BulletItem The Tenth International Conference on Learning Representations (ICLR 2022), 2022
     \BulletItem The 13th Edition of its Language Resources and Evaluation Conference (LREC 2022), 2022
     \BulletItem The 39th International Conference on Machine Learning (ICML 2022), 2022
+    \BulletItem The thirty-sixth Conference on Neural Information Processing Systems (NeurIPS 2022), 2022
+    \BulletItem The 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP 2022), 2022
+    \BulletItem The 17th Conference of the European Chapter of the Association for Computational Linguistics (EACL-23), 2023
+    \BulletItem The 40th International Conference on Machine Learning (ICML 2023), 2023
+    \BulletItem The 61st Annual Meeting of the Association for Computational Linguistics (ACL-23), 2023
+    \BulletItem 29TH ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2023)
+
+\Section
+{Teaching}
+{Teaching}
+{PDF:Teaching}
+\BulletItem Teaching Assistant, CS165B, Machine Learning, Fall 2019, UCSB
+\BulletItem Teaching Assistant, CS165B, Machine Learning, Spring 2020, UCSB
+\BulletItem Teaching Assistant, CS165B, Machine Learning, Spring 2021, UCSB
 
 \Section
 {Talks \& \newline Presentations}
